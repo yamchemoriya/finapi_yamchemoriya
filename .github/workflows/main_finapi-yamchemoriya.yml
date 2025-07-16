@@ -49,7 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     
-    
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
@@ -66,4 +65,4 @@ jobs:
         with:
           app-name: 'finapi-yamchemoriya'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C75B9FCCF4584F529961487BAAD335CF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D76B07039EF342959F2F7BF3143E5D5A }}
